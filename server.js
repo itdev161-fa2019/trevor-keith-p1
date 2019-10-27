@@ -5,8 +5,9 @@ const app = express();
 
 // API endpoionts
 app.get('/', (req, res) =>
-    res.send('http get request sent to root api endpoint')
+    res.send('HTTP get request successfully sent to root API endpoint')
 );
 
 // Connection listener
-app.listen(3000, () => console.log(`Express server running on port 3000`));
+const port = 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
